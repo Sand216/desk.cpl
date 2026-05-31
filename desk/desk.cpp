@@ -30,7 +30,7 @@ const IID IID_IThemeManager2 = { 0xc1e8c83e, 0x845d, 0x4d95, {0x81, 0xdb, 0xe2, 
 int CALLBACK DeskCallback(HWND hwnd, UINT msg, LPARAM) {
 	if (msg == PSCB_INITIALIZED)
 	{
-		HFONT font = CreateFont(MulDiv(-11, GetDpiForWindow(hwnd), 96), 0, 0, 0, FW_NORMAL, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, L"MS Sans Serif");
+		HFONT font = CreateFont(MulDiv(-11, GetDpiForWindow(hwnd), 96), 0, 0, 0, FW_NORMAL, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, L"MS Shell Dlg");
 
 		HWND hwndTab = PropSheet_GetTabControl(hwnd);
 		HWND hwndOK = GetDlgItem(hwnd, IDOK);
